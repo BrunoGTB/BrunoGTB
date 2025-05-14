@@ -2,7 +2,6 @@
   
   - 🔭 Atualmente atuo como Desenvolvedor Web FullStack
   - 📖 Estudando NodeJS
-  - 😀 Pronoums: ele/dele
 
 <div align="center">
   <a href="https://github.com/BrunoGTB">
