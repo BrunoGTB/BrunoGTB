@@ -3,7 +3,7 @@
 </p>
 
 - 🔬 **Agora:** IA aplicada ao Direito, com RAG, LLMs e classificação de documentos
-- 🧠 **Estudando:** machine learning, visão computacional e engenharia de LLMs
+- 🧠 **Estudando:** Machine Learning e Engenharia de LLMs
 - 🛠️ **Projetos:** [TrucoHub](https://github.com/BrunoGTB/TrucoHub) · [reconhecedor de humor](https://github.com/BrunoGTB/reconhecedor-de-humor) (expressões faciais com MediaPipe + scikit-learn)
 
 ### 🧰 Tecnologias
