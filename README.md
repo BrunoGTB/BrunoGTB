@@ -6,7 +6,6 @@
 - 🔬 Pesquisador em um projeto de inovação de IA aplicada ao Direito: RAG e chatbot para classificação de instrumentos jurídicos
 - 🤖 Interessado em machine learning, visão computacional e LLMs
 - 🛠️ Outros projetos: [TrucoHub](https://github.com/BrunoGTB/TrucoHub) e [reconhecedor de humor](https://github.com/BrunoGTB/reconhecedor-de-humor) (expressões faciais com MediaPipe + scikit-learn)
-- 🐧 Uso Arch Linux com Hyprland no dia a dia
 
 ### 🧰 Tecnologias
 
