@@ -115,6 +115,11 @@ def pixtext(txt,x0,y0,s,fill):
         x+=6*s
     return '\n'.join(out)
 
+import base64
+from PIL import Image as _Img
+_av=_Img.open('assets/avatar.png')
+AV_W=round(222*_av.width/_av.height)
+AVATAR=base64.b64encode(open('assets/avatar.png','rb').read()).decode()
 BW,BH=900,260
 parts=[]
 # bricks
@@ -140,7 +145,7 @@ def torch(x):
   <circle cx="{x}" cy="108" r="60" fill="url(#luz)"/>'''
 def plus(x,y,s,d):
     return f'<g class="brilho" style="animation-delay:{d}s" fill="#a274ff"><rect x="{x}" y="{y-s}" width="{s}" height="{3*s}"/><rect x="{x-s}" y="{y}" width="{3*s}" height="{s}"/></g>'
-monitor=''.join(f'<rect x="{772+x*4}" y="{70+y*4}" width="4" height="4" fill="#8b5cf6"/>' for y,row in enumerate(["1111111","1000001","1000001","1000001","1111111","0001000","0011100"]) for x,b in enumerate(row) if b=='1')
+monitor=''.join(f'<rect x="{808+x*4}" y="{62+y*4}" width="4" height="4" fill="#8b5cf6"/>' for y,row in enumerate(["1111111","1000001","1000001","1000001","1111111","0001000","0011100"]) for x,b in enumerate(row) if b=='1')
 code=''.join(f'<rect x="{x*4}" y="{y*4}" width="4" height="4" fill="#8b5cf6"/>' for y,row in enumerate(["00100010100","01000010010","10000100001","01001000010","00101000100"]) for x,b in enumerate(row) if b=='1')
 svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="{BW}" height="{BH}" viewBox="0 0 {BW} {BH}" role="img" aria-label="Bruno Custódio — banner em pixel art">
 <title>Bruno Custódio</title>
@@ -169,7 +174,7 @@ svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="{BW}" height="{BH}" viewB
   <ellipse cx="690" cy="238" rx="78" ry="10" fill="#000" opacity=".6"/>
   <circle cx="690" cy="150" r="120" fill="url(#luz)"/>
   <g class="heroi">
-{runs(g,5,600,22)}
+    <image href="data:image/png;base64,{AVATAR}" x="585" y="12" width="{AV_W}" height="222"/>
   </g>
   <g class="icone" style="animation-delay:.6s">{monitor}</g>
   <g transform="translate(528 96)"><g class="icone" style="animation-delay:1.2s">{code}</g></g>
