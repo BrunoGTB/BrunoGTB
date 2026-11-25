@@ -1,31 +1,47 @@
-## Opa! Eu sou Bruno Custódio, Desenvolvedor Web!
-  
-  - 🔭 Atualmente atuo como Desenvolvedor Web FullStack
-  - 📖 Estudando NodeJS
+<img align="right" alt="Bruno Custódio" width="140" src="https://github.com/BrunoGTB.png">
 
-<div align="center">
-  <a href="https://github.com/BrunoGTB">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=BrunoGTB&show_icons=true&title_color=de4f5b&icon_color=8e0a15&text_color=fff&bg_color=000000&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrunoGTB&layout=compact&langs_count=7&title_color=de4f5b&icon_color=8e0a15&text_color=fff&bg_color=000000"/>
-</div>
-<div style="display: inline_block"><br>
-    <img align="center" alt="Bruno-HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg">
-  <img align="center" alt="Bruno-CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg">
-  <img align="center" alt="Bruno-Js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="Bruno-PHP" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg">
-  <img align="center" alt="Bruno-MySQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
-  <img align="center" alt="Bruno-NodeJs" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg">
-  <img align="right" alt="Bruno-pic" height="150" style="border-radius:50px;" src="https://cdn.discordapp.com/attachments/725903788505825382/938147096316497940/Logo-BC.png">
-</div>
-  
-  ##
- 
-<div> 
-  <a href="https://www.instagram.com/bruno_gtb/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
- <a href="https://discord.gg/DNjTjtaZSx" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
-  <a href = "mailto:brunocustodio.inf@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/bruno-cust%C3%B3dio-78483b209/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
- 
-  ![Snake animation](https://github.com/BrunoGTB/BrunoGTB/blob/output/github-contribution-grid-snake.svg)
- 
-</div>
+## Opa! Eu sou o Bruno Custódio 👋
+
+- 🎓 Estudante de Ciência da Computação na UFLA
+- 🔬 Pesquisador em um projeto de inovação de IA aplicada ao Direito: RAG e chatbot para classificação de instrumentos jurídicos
+- 🤖 Interessado em machine learning, visão computacional e LLMs
+- 🛠️ Outros projetos: [TrucoHub](https://github.com/BrunoGTB/TrucoHub) e [reconhecedor de humor](https://github.com/BrunoGTB/reconhecedor-de-humor) (expressões faciais com MediaPipe + scikit-learn)
+- 🐧 Uso Arch Linux com Hyprland no dia a dia
+
+### 🧰 Tecnologias
+
+<p>
+  <img alt="Python" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">&nbsp;
+  <img alt="Java" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">&nbsp;
+  <img alt="C" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">&nbsp;
+  <img alt="JavaScript" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">&nbsp;
+  <img alt="Node.js" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">&nbsp;
+  <img alt="HTML" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">&nbsp;
+  <img alt="CSS" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">&nbsp;
+  <img alt="PHP" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">&nbsp;
+  <img alt="MySQL" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">&nbsp;
+  <img alt="PostgreSQL" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">&nbsp;
+  <img alt="Git" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">&nbsp;
+  <img alt="Linux" height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+</p>
+
+### 📊 Estatísticas
+
+<p align="center">
+  <img height="170" alt="Estatísticas do GitHub" src="./profile-summary-card-output/github_dark/3-stats.svg">
+  <img height="170" alt="Linguagens mais usadas" src="./profile-summary-card-output/github_dark/1-repos-per-language.svg">
+</p>
+
+### 📫 Contato
+
+<p>
+  <a href="https://www.linkedin.com/in/bruno-cust%C3%B3dio-78483b209/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:brunocustodio.inf@gmail.com"><img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"></a>
+  <a href="https://www.instagram.com/bruno_gtb/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+  <a href="https://discord.gg/DNjTjtaZSx"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BrunoGTB/BrunoGTB/output/github-contribution-grid-snake-dark.svg">
+  <img alt="Cobrinha comendo o gráfico de contribuições" src="https://raw.githubusercontent.com/BrunoGTB/BrunoGTB/output/github-contribution-grid-snake.svg">
+</picture>
