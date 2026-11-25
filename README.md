@@ -1,4 +1,6 @@
-<img align="right" alt="Bruno Custódio" width="140" src="https://github.com/BrunoGTB.png">
+<p align="center">
+  <img alt="Bruno Custódio em pixel art, num porão de tijolos iluminado por tochas roxas" src="./assets/banner.svg" width="100%">
+</p>
 
 ## Opa! Eu sou o Bruno Custódio 👋
 
