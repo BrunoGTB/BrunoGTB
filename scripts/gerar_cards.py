@@ -13,14 +13,17 @@ from html import escape
 from pathlib import Path
 
 # ---------- Paleta ----------
-BG = "#0d0d12"
-BORDA = "#2a1418"
-TITULO = "#ff5c6a"
-ACENTO_1 = "#de4f5b"
-ACENTO_2 = "#8e0a15"
-TEXTO = "#e8e8ee"
-SUAVE = "#9a9aa8"
-TRILHA = "#1f1f28"
+# Tirada do avatar em pixel art: fundo preto-arroxeado, roxo neon e tom quente de pele
+BG = "#0b0710"
+BG_TOPO = "#170d19"
+BORDA = "#341d3c"
+TITULO = "#a274ff"
+ACENTO_1 = "#8b5cf6"
+ACENTO_2 = "#612c7f"
+QUENTE = "#d78564"
+TEXTO = "#ece6f5"
+SUAVE = "#9d8fae"
+TRILHA = "#221430"
 FONTE = "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"
 
 LARGURA, ALTURA = 495, 210
@@ -117,8 +120,11 @@ def moldura(titulo: str, corpo: str, rotulo: str) -> str:
     <linearGradient id="acento" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{ACENTO_1}"/><stop offset="1" stop-color="{ACENTO_2}"/>
     </linearGradient>
+    <linearGradient id="anel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="{QUENTE}"/><stop offset="0.45" stop-color="{ACENTO_1}"/><stop offset="1" stop-color="{ACENTO_2}"/>
+    </linearGradient>
     <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#14141b"/><stop offset="1" stop-color="{BG}"/>
+      <stop offset="0" stop-color="{BG_TOPO}"/><stop offset="1" stop-color="{BG}"/>
     </linearGradient>
   </defs>
   <style>
@@ -136,6 +142,10 @@ def moldura(titulo: str, corpo: str, rotulo: str) -> str:
   <rect x="0.5" y="0.5" width="{LARGURA-1}" height="{ALTURA-1}" rx="12" fill="url(#fundo)" stroke="{BORDA}"/>
   <rect x="0.5" y="0.5" width="4" height="{ALTURA-1}" rx="2" fill="url(#acento)"/>
   <text x="26" y="36" class="titulo">{escape(titulo)}</text>
+  <g fill="{ACENTO_1}" opacity="0.55" shape-rendering="crispEdges">
+    <rect x="{LARGURA-34}" y="18" width="3" height="9"/><rect x="{LARGURA-37}" y="21" width="9" height="3"/>
+    <rect x="{LARGURA-54}" y="32" width="2" height="6"/><rect x="{LARGURA-56}" y="34" width="6" height="2"/>
+  </g>
 {corpo}
 </svg>
 """
@@ -154,7 +164,7 @@ def card_estatisticas(d: dict) -> str:
         y = 66 + i * 24
         corpo.append(
             f'  <g class="surge" style="animation-delay:{150 + i*120}ms">'
-            f'<rect x="26" y="{y-8}" width="6" height="6" rx="1.5" fill="url(#acento)"/>'
+            f'<rect x="26" y="{y-8}" width="6" height="6" fill="{QUENTE}" shape-rendering="crispEdges"/>'
             f'<text x="42" y="{y}" class="rotulo">{rotulo}</text>'
             f'<text x="290" y="{y}" class="valor" text-anchor="end">{fmt(valor)}</text></g>'
         )
@@ -165,7 +175,7 @@ def card_estatisticas(d: dict) -> str:
     progresso = min(d["contribuicoes_ano"] / 365, 1)  # meta visual: 1 por dia
     corpo.append(f"""  <g class="surge" style="animation-delay:200ms">
     <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{TRILHA}" stroke-width="9"/>
-    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#acento)" stroke-width="9" stroke-linecap="round"
+    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#anel)" stroke-width="9" stroke-linecap="round"
       stroke-dasharray="{circ:.1f}" stroke-dashoffset="{circ*(1-progresso):.1f}" transform="rotate(-90 {cx} {cy})"
       style="--total:{circ:.1f}; animation: desenhar 1.2s ease-out"/>
     <text x="{cx}" y="{cy+4}" class="grande" text-anchor="middle">{fmt(d['contribuicoes_ano'])}</text>
