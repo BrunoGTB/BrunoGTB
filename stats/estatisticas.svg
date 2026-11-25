@@ -23,19 +23,19 @@
   <rect x="0.5" y="0.5" width="494" height="209" rx="12" fill="url(#fundo)" stroke="#2a1418"/>
   <rect x="0.5" y="0.5" width="4" height="209" rx="2" fill="url(#acento)"/>
   <text x="26" y="36" class="titulo">Estatísticas no GitHub</text>
-  <g class="surge" style="animation-delay:150ms"><rect x="26" y="58" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="66" class="rotulo">Estrelas recebidas</text><text x="290" y="66" class="valor" text-anchor="end">0</text></g>
-  <g class="surge" style="animation-delay:270ms"><rect x="26" y="82" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="90" class="rotulo">Commits no último ano</text><text x="290" y="90" class="valor" text-anchor="end">105</text></g>
-  <g class="surge" style="animation-delay:390ms"><rect x="26" y="106" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="114" class="rotulo">Pull requests</text><text x="290" y="114" class="valor" text-anchor="end">10</text></g>
-  <g class="surge" style="animation-delay:510ms"><rect x="26" y="130" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="138" class="rotulo">Issues abertas</text><text x="290" y="138" class="valor" text-anchor="end">0</text></g>
-  <g class="surge" style="animation-delay:630ms"><rect x="26" y="154" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="162" class="rotulo">Repositórios públicos</text><text x="290" y="162" class="valor" text-anchor="end">8</text></g>
+  <g class="surge" style="animation-delay:150ms"><rect x="26" y="58" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="66" class="rotulo">Commits no último ano</text><text x="290" y="66" class="valor" text-anchor="end">106</text></g>
+  <g class="surge" style="animation-delay:270ms"><rect x="26" y="82" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="90" class="rotulo">Pull requests</text><text x="290" y="90" class="valor" text-anchor="end">10</text></g>
+  <g class="surge" style="animation-delay:390ms"><rect x="26" y="106" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="114" class="rotulo">Repositórios públicos</text><text x="290" y="114" class="valor" text-anchor="end">8</text></g>
+  <g class="surge" style="animation-delay:510ms"><rect x="26" y="130" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="138" class="rotulo">Seguidores</text><text x="290" y="138" class="valor" text-anchor="end">5</text></g>
+  <g class="surge" style="animation-delay:630ms"><rect x="26" y="154" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="162" class="rotulo">Estrelas recebidas</text><text x="290" y="162" class="valor" text-anchor="end">0</text></g>
   <g class="surge" style="animation-delay:200ms">
     <circle cx="395" cy="104" r="50" fill="none" stroke="#1f1f28" stroke-width="9"/>
     <circle cx="395" cy="104" r="50" fill="none" stroke="url(#acento)" stroke-width="9" stroke-linecap="round"
-      stroke-dasharray="314.2" stroke-dashoffset="275.8" transform="rotate(-90 395 104)"
+      stroke-dasharray="314.2" stroke-dashoffset="208.3" transform="rotate(-90 395 104)"
       style="--total:314.2; animation: desenhar 1.2s ease-out"/>
-    <text x="395" y="108" class="grande" text-anchor="middle">122</text>
+    <text x="395" y="108" class="grande" text-anchor="middle">123</text>
     <text x="395" y="126" class="pequeno" text-anchor="middle">contribuições</text>
     <text x="395" y="178" class="pequeno" text-anchor="middle">no último ano</text>
   </g>
-  <text x="26" y="194" class="pequeno">5 seguidores · 6 anos no GitHub</text>
+  <text x="26" y="194" class="pequeno">No GitHub desde 2020</text>
 </svg>
