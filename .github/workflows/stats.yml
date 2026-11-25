@@ -5,8 +5,10 @@ on:
     - cron: "17 6 * * *"
   workflow_dispatch:
   push:
-    branches: [main, master]
-    paths: [.github/workflows/stats.yml]
+    branches: [main]
+    paths:
+      - .github/workflows/stats.yml
+      - scripts/gerar_cards.py
 
 permissions:
   contents: write
@@ -14,14 +16,27 @@ permissions:
 jobs:
   stats:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar SVGs
+        run: python scripts/gerar_cards.py "${{ github.repository_owner }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: ${{ github.event.repository.default_branch }}
-          THEME: github_dark
-          UTC_OFFSET: -3
+
+      - name: Commit se houver mudança
+        run: |
+          git add stats/
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Atualiza cards de estatísticas"
+            git push
+          fi

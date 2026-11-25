@@ -2,10 +2,13 @@
 
 ## Opa! Eu sou o Bruno Custódio 👋
 
-- 🎓 Estudante de Ciência da Computação na UFLA
-- 🔬 Pesquisador em um projeto de inovação de IA aplicada ao Direito: RAG e chatbot para classificação de instrumentos jurídicos
-- 🤖 Interessado em machine learning, visão computacional e LLMs
-- 🛠️ Outros projetos: [TrucoHub](https://github.com/BrunoGTB/TrucoHub) e [reconhecedor de humor](https://github.com/BrunoGTB/reconhecedor-de-humor) (expressões faciais com MediaPipe + scikit-learn)
+Sou estudante de Ciência da Computação na UFLA e gosto de construir coisas que juntam código e inteligência artificial. Hoje faço parte de um projeto de inovação que usa **RAG e chatbots para classificar instrumentos jurídicos**, e no tempo livre me divido entre visão computacional, jogos (sim, um truco online 🃏) e deixar meu Arch Linux do jeito que eu gosto.
+
+- 🔬 **Agora:** IA aplicada ao Direito, com RAG, LLMs e classificação de documentos
+- 🧠 **Estudando:** machine learning, visão computacional e engenharia de LLMs
+- 🛠️ **Projetos:** [TrucoHub](https://github.com/BrunoGTB/TrucoHub) · [reconhecedor de humor](https://github.com/BrunoGTB/reconhecedor-de-humor) (expressões faciais com MediaPipe + scikit-learn)
+- 🐧 **Setup:** Arch Linux + Hyprland
+- 💬 **Fale comigo sobre:** IA, Linux, jogos de cartas e projetos open source
 
 ### 🧰 Tecnologias
 
@@ -27,8 +30,8 @@
 ### 📊 Estatísticas
 
 <p align="center">
-  <img height="170" alt="Estatísticas do GitHub" src="./profile-summary-card-output/github_dark/3-stats.svg">
-  <img height="170" alt="Linguagens mais usadas" src="./profile-summary-card-output/github_dark/1-repos-per-language.svg">
+  <img alt="Estatísticas do GitHub" src="./stats/estatisticas.svg">
+  <img alt="Linguagens mais usadas" src="./stats/linguagens.svg">
 </p>
 
 ### 📫 Contato
