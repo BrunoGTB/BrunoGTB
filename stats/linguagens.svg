@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="210" viewBox="0 0 495 210" role="img" aria-label="Linguagens mais usadas">
+  <title>Linguagens mais usadas</title>
+  <defs>
+    <linearGradient id="acento" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#de4f5b"/><stop offset="1" stop-color="#8e0a15"/>
+    </linearGradient>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14141b"/><stop offset="1" stop-color="#0d0d12"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .titulo { font-size: 17px; font-weight: 700; fill: #ff5c6a; }
+    .rotulo { font-size: 13px; fill: #9a9aa8; }
+    .valor { font-size: 13px; font-weight: 700; fill: #e8e8ee; }
+    .grande { font-size: 26px; font-weight: 800; fill: #e8e8ee; }
+    .pequeno { font-size: 11px; fill: #9a9aa8; }
+    .surge { animation: surgir .5s ease-out backwards; }
+    @keyframes surgir { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes desenhar { from { stroke-dashoffset: var(--total); } }
+    @keyframes crescer { from { transform: scaleX(0); } }
+  </style>
+  <rect x="0.5" y="0.5" width="494" height="209" rx="12" fill="url(#fundo)" stroke="#2a1418"/>
+  <rect x="0.5" y="0.5" width="4" height="209" rx="2" fill="url(#acento)"/>
+  <text x="26" y="36" class="titulo">Linguagens mais usadas</text>
+  <clipPath id="barra"><rect x="26" y="58" width="443" height="10" rx="5"/></clipPath>
+  <g clip-path="url(#barra)" style="transform-origin:26px 0; animation: crescer .9s ease-out">
+    <rect x="26.00" y="58" width="145.93" height="10" fill="#f1e05a"/>
+    <rect x="171.43" y="58" width="86.96" height="10" fill="#e34c26"/>
+    <rect x="257.90" y="58" width="68.69" height="10" fill="#663399"/>
+    <rect x="326.08" y="58" width="58.98" height="10" fill="#b07219"/>
+    <rect x="384.56" y="58" width="35.02" height="10" fill="#3572A5"/>
+    <rect x="419.07" y="58" width="34.48" height="10" fill="#878787"/>
+    <rect x="453.05" y="58" width="16.45" height="10" fill="#4a4a57"/>
+  </g>
+  <g class="surge" style="animation-delay:300ms"><circle cx="31" cy="96" r="5" fill="#f1e05a"/><text x="44" y="100" class="valor">JavaScript</text><text x="231" y="100" class="rotulo" text-anchor="end">32.8%</text></g>
+  <g class="surge" style="animation-delay:390ms"><circle cx="261" cy="96" r="5" fill="#e34c26"/><text x="274" y="100" class="valor">HTML</text><text x="461" y="100" class="rotulo" text-anchor="end">19.5%</text></g>
+  <g class="surge" style="animation-delay:480ms"><circle cx="31" cy="124" r="5" fill="#663399"/><text x="44" y="128" class="valor">CSS</text><text x="231" y="128" class="rotulo" text-anchor="end">15.4%</text></g>
+  <g class="surge" style="animation-delay:570ms"><circle cx="261" cy="124" r="5" fill="#b07219"/><text x="274" y="128" class="valor">Java</text><text x="461" y="128" class="rotulo" text-anchor="end">13.2%</text></g>
+  <g class="surge" style="animation-delay:660ms"><circle cx="31" cy="152" r="5" fill="#3572A5"/><text x="44" y="156" class="valor">Python</text><text x="231" y="156" class="rotulo" text-anchor="end">7.8%</text></g>
+  <g class="surge" style="animation-delay:750ms"><circle cx="261" cy="152" r="5" fill="#878787"/><text x="274" y="156" class="valor">Hack</text><text x="461" y="156" class="rotulo" text-anchor="end">7.7%</text></g>
+  <g class="surge" style="animation-delay:840ms"><circle cx="31" cy="180" r="5" fill="#4a4a57"/><text x="44" y="184" class="valor">Outras</text><text x="231" y="184" class="rotulo" text-anchor="end">3.6%</text></g>
+</svg>

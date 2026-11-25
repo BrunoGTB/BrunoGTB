@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="210" viewBox="0 0 495 210" role="img" aria-label="Estatísticas do GitHub">
+  <title>Estatísticas do GitHub</title>
+  <defs>
+    <linearGradient id="acento" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#de4f5b"/><stop offset="1" stop-color="#8e0a15"/>
+    </linearGradient>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14141b"/><stop offset="1" stop-color="#0d0d12"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .titulo { font-size: 17px; font-weight: 700; fill: #ff5c6a; }
+    .rotulo { font-size: 13px; fill: #9a9aa8; }
+    .valor { font-size: 13px; font-weight: 700; fill: #e8e8ee; }
+    .grande { font-size: 26px; font-weight: 800; fill: #e8e8ee; }
+    .pequeno { font-size: 11px; fill: #9a9aa8; }
+    .surge { animation: surgir .5s ease-out backwards; }
+    @keyframes surgir { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes desenhar { from { stroke-dashoffset: var(--total); } }
+    @keyframes crescer { from { transform: scaleX(0); } }
+  </style>
+  <rect x="0.5" y="0.5" width="494" height="209" rx="12" fill="url(#fundo)" stroke="#2a1418"/>
+  <rect x="0.5" y="0.5" width="4" height="209" rx="2" fill="url(#acento)"/>
+  <text x="26" y="36" class="titulo">Estatísticas no GitHub</text>
+  <g class="surge" style="animation-delay:150ms"><rect x="26" y="58" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="66" class="rotulo">Estrelas recebidas</text><text x="290" y="66" class="valor" text-anchor="end">0</text></g>
+  <g class="surge" style="animation-delay:270ms"><rect x="26" y="82" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="90" class="rotulo">Commits no último ano</text><text x="290" y="90" class="valor" text-anchor="end">105</text></g>
+  <g class="surge" style="animation-delay:390ms"><rect x="26" y="106" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="114" class="rotulo">Pull requests</text><text x="290" y="114" class="valor" text-anchor="end">10</text></g>
+  <g class="surge" style="animation-delay:510ms"><rect x="26" y="130" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="138" class="rotulo">Issues abertas</text><text x="290" y="138" class="valor" text-anchor="end">0</text></g>
+  <g class="surge" style="animation-delay:630ms"><rect x="26" y="154" width="6" height="6" rx="1.5" fill="url(#acento)"/><text x="42" y="162" class="rotulo">Repositórios públicos</text><text x="290" y="162" class="valor" text-anchor="end">8</text></g>
+  <g class="surge" style="animation-delay:200ms">
+    <circle cx="395" cy="104" r="50" fill="none" stroke="#1f1f28" stroke-width="9"/>
+    <circle cx="395" cy="104" r="50" fill="none" stroke="url(#acento)" stroke-width="9" stroke-linecap="round"
+      stroke-dasharray="314.2" stroke-dashoffset="275.8" transform="rotate(-90 395 104)"
+      style="--total:314.2; animation: desenhar 1.2s ease-out"/>
+    <text x="395" y="108" class="grande" text-anchor="middle">122</text>
+    <text x="395" y="126" class="pequeno" text-anchor="middle">contribuições</text>
+    <text x="395" y="178" class="pequeno" text-anchor="middle">no último ano</text>
+  </g>
+  <text x="26" y="194" class="pequeno">5 seguidores · 6 anos no GitHub</text>
+</svg>
