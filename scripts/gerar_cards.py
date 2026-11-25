@@ -25,6 +25,8 @@ FONTE = "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"
 
 LARGURA, ALTURA = 495, 210
 IGNORAR_LINGUAGENS = {"Jupyter Notebook"}  # notebooks inflam os bytes
+RENOMEAR_LINGUAGENS = {"Hack": "PHP"}  # o linguist às vezes marca PHP como Hack
+CORES_FIXAS = {"PHP": "#4F5D95"}
 MAX_LINGUAGENS = 6
 
 QUERY = """
@@ -70,14 +72,14 @@ def buscar_dados(login: str, token: str) -> dict:
     linguagens: dict[str, dict] = {}
     for repo in u["repositories"]["nodes"]:
         for e in repo["languages"]["edges"]:
-            nome = e["node"]["name"]
+            nome = RENOMEAR_LINGUAGENS.get(e["node"]["name"], e["node"]["name"])
             if nome in IGNORAR_LINGUAGENS:
                 continue
-            item = linguagens.setdefault(nome, {"bytes": 0, "cor": e["node"]["color"] or SUAVE})
+            cor = CORES_FIXAS.get(nome) or e["node"]["color"] or SUAVE
+            item = linguagens.setdefault(nome, {"bytes": 0, "cor": cor})
             item["bytes"] += e["size"]
 
     criado = datetime.fromisoformat(u["createdAt"].replace("Z", "+00:00"))
-    anos = (datetime.now(timezone.utc) - criado).days // 365
     return {
         "nome": u["name"] or login,
         "estrelas": sum(r["stargazerCount"] for r in u["repositories"]["nodes"]),
@@ -87,14 +89,14 @@ def buscar_dados(login: str, token: str) -> dict:
         "issues": u["issues"]["totalCount"],
         "commits_ano": cc["totalCommitContributions"] + cc["restrictedContributionsCount"],
         "contribuicoes_ano": cc["contributionCalendar"]["totalContributions"],
-        "anos": anos,
+        "desde": criado.year,
         "linguagens": linguagens,
     }
 
 
 DADOS_EXEMPLO = {
     "nome": "Bruno Custódio", "estrelas": 12, "repos": 14, "seguidores": 23,
-    "prs": 31, "issues": 9, "commits_ano": 486, "contribuicoes_ano": 612, "anos": 5,
+    "prs": 31, "issues": 9, "commits_ano": 486, "contribuicoes_ano": 612, "desde": 2020,
     "linguagens": {
         "Python": {"bytes": 420000, "cor": "#3572A5"}, "Java": {"bytes": 260000, "cor": "#b07219"},
         "JavaScript": {"bytes": 150000, "cor": "#f1e05a"}, "C": {"bytes": 90000, "cor": "#555555"},
@@ -141,11 +143,11 @@ def moldura(titulo: str, corpo: str, rotulo: str) -> str:
 
 def card_estatisticas(d: dict) -> str:
     linhas = [
-        ("Estrelas recebidas", d["estrelas"]),
         ("Commits no último ano", d["commits_ano"]),
         ("Pull requests", d["prs"]),
-        ("Issues abertas", d["issues"]),
         ("Repositórios públicos", d["repos"]),
+        ("Seguidores", d["seguidores"]),
+        ("Estrelas recebidas", d["estrelas"]),
     ]
     corpo = []
     for i, (rotulo, valor) in enumerate(linhas):
@@ -160,7 +162,7 @@ def card_estatisticas(d: dict) -> str:
     # anel de contribuições
     cx, cy, r = 395, 104, 50
     circ = 2 * 3.14159 * r
-    progresso = min(d["contribuicoes_ano"] / 1000, 1)  # meta visual: 1000/ano
+    progresso = min(d["contribuicoes_ano"] / 365, 1)  # meta visual: 1 por dia
     corpo.append(f"""  <g class="surge" style="animation-delay:200ms">
     <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{TRILHA}" stroke-width="9"/>
     <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#acento)" stroke-width="9" stroke-linecap="round"
@@ -171,8 +173,7 @@ def card_estatisticas(d: dict) -> str:
     <text x="{cx}" y="{cy+74}" class="pequeno" text-anchor="middle">no último ano</text>
   </g>""")
     corpo.append(
-        f'  <text x="26" y="{ALTURA-16}" class="pequeno">{d["seguidores"]} seguidores · '
-        f'{d["anos"]} {"ano" if d["anos"] == 1 else "anos"} no GitHub</text>'
+        f'  <text x="26" y="{ALTURA-16}" class="pequeno">No GitHub desde {d["desde"]}</text>'
     )
     return moldura("Estatísticas no GitHub", "\n".join(corpo), "Estatísticas do GitHub")
 
