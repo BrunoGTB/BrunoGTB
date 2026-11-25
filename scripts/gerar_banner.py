@@ -181,7 +181,6 @@ svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="{BW}" height="{BH}" viewB
 {pixtext("CUSTÓDIO",48,132,7,"#612c7f")}
 {pixtext("CUSTÓDIO",44,128,7,"#a274ff")}
   </g>
-  <text x="46" y="208" font-size="15" fill="#9d8fae" shape-rendering="auto">&gt; IA aplicada ao Direito · RAG · visão computacional</text>
 </g>
 <rect x="1" y="1" width="{BW-2}" height="{BH-2}" rx="14" fill="none" stroke="#341d3c" stroke-width="2"/>
 </svg>'''
