@@ -30,7 +30,7 @@
     <rect x="461" y="18" width="3" height="9"/><rect x="458" y="21" width="9" height="3"/>
     <rect x="441" y="32" width="2" height="6"/><rect x="439" y="34" width="6" height="2"/>
   </g>
-  <g class="surge" style="animation-delay:150ms"><rect x="26" y="58" width="6" height="6" fill="#d78564" shape-rendering="crispEdges"/><text x="42" y="66" class="rotulo">Commits no último ano</text><text x="290" y="66" class="valor" text-anchor="end">124</text></g>
+  <g class="surge" style="animation-delay:150ms"><rect x="26" y="58" width="6" height="6" fill="#d78564" shape-rendering="crispEdges"/><text x="42" y="66" class="rotulo">Commits no último ano</text><text x="290" y="66" class="valor" text-anchor="end">133</text></g>
   <g class="surge" style="animation-delay:270ms"><rect x="26" y="82" width="6" height="6" fill="#d78564" shape-rendering="crispEdges"/><text x="42" y="90" class="rotulo">Pull requests</text><text x="290" y="90" class="valor" text-anchor="end">10</text></g>
   <g class="surge" style="animation-delay:390ms"><rect x="26" y="106" width="6" height="6" fill="#d78564" shape-rendering="crispEdges"/><text x="42" y="114" class="rotulo">Repositórios públicos</text><text x="290" y="114" class="valor" text-anchor="end">8</text></g>
   <g class="surge" style="animation-delay:510ms"><rect x="26" y="130" width="6" height="6" fill="#d78564" shape-rendering="crispEdges"/><text x="42" y="138" class="rotulo">Seguidores</text><text x="290" y="138" class="valor" text-anchor="end">5</text></g>
@@ -38,9 +38,9 @@
   <g class="surge" style="animation-delay:200ms">
     <circle cx="395" cy="104" r="50" fill="none" stroke="#221430" stroke-width="9"/>
     <circle cx="395" cy="104" r="50" fill="none" stroke="url(#anel)" stroke-width="9" stroke-linecap="round"
-      stroke-dasharray="314.2" stroke-dashoffset="192.8" transform="rotate(-90 395 104)"
+      stroke-dasharray="314.2" stroke-dashoffset="185.1" transform="rotate(-90 395 104)"
       style="--total:314.2; animation: desenhar 1.2s ease-out"/>
-    <text x="395" y="108" class="grande" text-anchor="middle">141</text>
+    <text x="395" y="108" class="grande" text-anchor="middle">150</text>
     <text x="395" y="126" class="pequeno" text-anchor="middle">contribuições</text>
     <text x="395" y="178" class="pequeno" text-anchor="middle">no último ano</text>
   </g>
